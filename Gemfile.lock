@@ -38,6 +38,11 @@ GIT
   specs:
     cancan (2.0.0.alpha)
 
+PATH
+  remote: ../compass-catarse
+  specs:
+    compass-catarse (0.0.1)
+
 GEM
   remote: https://rubygems.org/
   specs:
@@ -440,6 +445,7 @@ DEPENDENCIES
   catarse_paypal_express!
   coffee-rails (~> 3.2.2)
   compass-960-plugin (~> 0.10.4)
+  compass-catarse!
   compass-rails (~> 1.0.2)
   database_cleaner
   devise

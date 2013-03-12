@@ -112,6 +112,7 @@ group :assets do
   gem 'sass-rails',         '~> 3.2.5'
   gem 'coffee-rails',       '~> 3.2.2'
   gem "compass-rails",      '~> 1.0.2'
+  gem "compass-catarse",      path: '../compass-catarse'
   gem 'uglifier',           '~> 1.0.3'
   gem 'compass-960-plugin', '~> 0.10.4'
 end
