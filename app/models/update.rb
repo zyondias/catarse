@@ -15,7 +15,7 @@ class Update < ActiveRecord::Base
         '<' => '&lt;',
         '"' => '"'
       }
-      image
+      email_image width: 513
       redcloth :target => :_blank
       link :target => :_blank
     end
@@ -32,6 +32,7 @@ class Update < ActiveRecord::Base
         update_title: title,
         update: self,
         from: project.user.email,
+        display_name: project.user.display_name,
         update_comment: email_comment_html
     end
   end
