@@ -39,23 +39,23 @@
       h4= t('projects.project_header.without_city', :category_name => link_to(@project.category, explore_path(:anchor => @project.category.to_s.parameterize)), :author => link_to(@project.user.display_name, user_path(@project.user))).html_safe
     .tab_container
       nav#project_menu
-        = link_to '#about', :id => 'about_link', :class => 'selected' do
+        = link_to '#about', :id => 'about_link', :class => 'tab selected' do
           = t('.menu.about')
-        = link_to '#updates', :id => 'updates_link' do
+        = link_to '#updates', :id => 'updates_link', :class => 'tab' do
           = t('.menu.updates')
           span.count=" (#{@project.updates.count})"
-        = link_to '#backers', :id => 'backers_link' do
+        = link_to '#backers', :id => 'backers_link', :class => 'tab' do
           = t('.menu.backers')
           span.count=" (#{@project.total_backers})"
-        = link_to '#comments', :id => 'comments_link' do
+        = link_to '#comments', :id => 'comments_link', :class => 'tab' do
           = t('.menu.comments')
           | &nbsp; (
           fb:comments-count href="#{request.url}"
           | )
         - if can? :update, @project
-          = link_to '#edit', :id => 'edit_link' do
+          = link_to '#edit', :id => 'edit_link', :class => 'tab' do
             = t('.menu.edit')
-          = link_to '#reports', :id => 'reports_link' do
+          = link_to '#reports', :id => 'reports_link', :class => 'tab' do
             = t('.menu.reports')
     .main
       #project_content

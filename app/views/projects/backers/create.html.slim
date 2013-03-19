@@ -65,7 +65,7 @@
           .tab_container
             nav#payment_menu
               - PaymentEngines.engines.each do |engine|
-                = link_to "##{engine[:name]}_payment", :id => engine[:name], :class => 'selected enabled' , :'data-target' => engine[:review_path].call(@backer) do
+                = link_to "##{engine[:name]}_payment", :id => engine[:name], :class => 'tab selected enabled' , :'data-target' => engine[:review_path].call(@backer) do
                   = t("projects.backers.review.#{engine[:name]}")
           - PaymentEngines.engines.each do |engine|
             div[id="#{engine[:name]}_payment" class="payments_type hide"]
