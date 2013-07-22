@@ -9,7 +9,6 @@ gem 'sinatra', require: false # required by sidekiq web interface mounted on /si
 
 gem 'shoulda', :require => false
 
-gem 'ezcrypto'
 
 # Turns every field on a editable one
 gem 'best_in_place'
