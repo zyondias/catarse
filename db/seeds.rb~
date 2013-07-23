@@ -47,7 +47,7 @@
 ].each do |name|
   NotificationType.find_or_create_by_name name
 end
-#configuracoes necessarias para nao dar bug
+
 {
   company_name: 'Catarse',
   host: 'localhost:3000',
