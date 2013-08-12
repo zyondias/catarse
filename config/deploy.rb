@@ -4,7 +4,7 @@ set :application, "192.168.0.60"
 
 set :scm, :git
 set :repository,  "https://github.com/zyondias/catarse.git"
-set :branch, 'master'
+set :branch, 'production'
 set :deploy_via, :remote_cache
 
 set :keep_releases, 3
